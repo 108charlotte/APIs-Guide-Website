@@ -7,14 +7,35 @@
     margin-top: 20px !important; 
 }
 
-body {
+.flexbox {
     display: flex; 
     flex-direction: row; 
+}
+
+* {
+    margin: 0px; 
+}
+
+p {
+    margin: 10px 0px; 
+}
+
+#main-content {
+    margin: 10px; 
+}
+
+@media (max-height: 100vh) {
+    #main-content {
+        height: 96vh; /* for some reason this is the height where it didn't make me scroll down, idk maybe it has smth to do with margins */
+    }
 }
 
 #sidebar {
     width: 200px; 
     flex-shrink: 0; 
+    background: rgb(236, 236, 236); 
+    padding: 10px; 
+    padding-bottom: 0px; 
 }
 
 #sidebar a {
@@ -42,4 +63,15 @@ body {
 
 #current a {
     color: rgb(225, 176, 28) !important; 
+}
+
+.code {
+    background-color: rgb(231, 231, 231); 
+    padding: 10px; 
+    border-radius: 5px; 
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 30px;
+    font-style: normal;
+    font-size: 12px; 
 }
