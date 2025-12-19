@@ -1,0 +1,31 @@
+div ul {
+    list-style: none; 
+    padding: 0;  
+}
+
+.main-level {
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+}
+
+body {
+    display: flex; 
+    flex-direction: row; 
+}
+
+#sidebar {
+    width: 200px; 
+    flex-shrink: 0; 
+}
+
+.button {
+    display: block; 
+    width: 70px; 
+    margin: 10px 0px; 
+    background-color: rgb(136, 176, 234); 
+    padding: 10px; 
+    border-radius: 10px; 
+    text-decoration: none;
+    color: black; 
+    border: 2px solid black; 
+}
