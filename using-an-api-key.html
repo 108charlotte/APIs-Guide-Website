@@ -18,23 +18,28 @@
             
             <li class="main-level"><a href="/getting-started.html">CatAPI</a></li>
             <li><a href="/getting-started.html">Creating a simple website</a></li>
-            <li><a href="/api-key.html">Getting an API key</a></li>
             <li><a href="/using-an-api.html">Using the API to get images</a></li>
+
+            <li class="main-level"><a href="/api-key.html">API Keys</a></li>
+            <li><a href="/api-key.html">Getting an API key</a></li>
             <li id="current"><a href="/using-an-api-key.html">Using an API key</a></li>
 
             <li class="main-level"><a href="/other-apis.html">Other APIs</a></li>
         </ul>
     </div>
     <div id="main-content">
-        <h1>using an API key</h1>
+        <h1>using an API key: with a framework</h1>
         <p>Now that you've learned how to use an API without an API key, here's a guide on using one with an API key. </p>
         <p>Many APIs require that you use an API key, which allows the API to check who your request is coming from. For example, in paid APIs it can be used to check if you have paid for a certain plan of that API or to charge you depending on the number of requests you have made. </p>
         <p>If you don't yet have an api key for the cat api, head over to <a href="api-key.html">this page</a>. If you already have your API key, head over to your email and copy it onto your clipboard. </p>
         <p>When using an API key, its really important to keep it a secret. One of the ways we can do this in public codebases (such as a public repository on GitHub) is use environmental variables. </p>
         <p>This guide will cover using a .env file to store an API key for testing, then deploying on Vercel with an API key as an environmental variable. </p>
-        <h2>calling an API with a key (local)</h2>
-        <p></p>
-        <h2>deploying on Vercel</h2>
+        <h2>calling an API with a key (frameworks <b>only</b>)</h2>
+        <h3>Locally</h3>
+        <p>If you are not using vanilla html/css/js, then it is possible to keep your API key secret. You can do this by setting up a .env and gitignore locally, then using environmental variables after deployment. </p>
+        <p>First, add a .gitignore file to your repository. If you're working in VS code, you can do this by </p>
+        <h3>Deployment: Vercel</h3>
+        <p>Using plain Javascript, its not possible to hide our API key. </p>
         
         <a style="width: 60px;" class="button" href="/using-an-api.html">go home</a>
         <p>or</p>
