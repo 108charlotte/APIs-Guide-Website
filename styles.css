@@ -132,12 +132,12 @@ h1 {
 .button {
     display: block;
     margin: 10px 0px;
-    background-color: rgb(136, 176, 234);
+    background-color: rgba(136, 175, 234, 0.775);
     padding: 10px;
     border-radius: 10px;
     text-decoration: none;
     color: black;
-    border: 2px solid black;
+    border: solid rgba(121, 121, 121, 0.307);
     text-align: center;
 }
 

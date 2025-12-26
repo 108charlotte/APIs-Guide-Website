@@ -25,6 +25,7 @@
             <li class="main-level current"><a href="api-key.html">API Keys</a></li>
             <li><a href="api-key.html">Getting an API Key</a></li>
             <li class="current"><a href="using-an-api-key.html">Using an API Key</a></li>
+            <li><a href="deployment.html">Deployment</a></li>
 
             <li class="main-level"><a href="other-apis.html">Other APIs</a></li>
         </ul>
@@ -65,29 +66,9 @@
         <p>Finally, in your code, you can add an image tag with an src defined by catapi_json[0].url</p>
         <p class="code">&#60;img src={catapi_json[0].url}&#62;</p>
         <p>You may have to set the width so that it fits on your screen, but don't set both the width and the height otherwise it may distort the image! Alternatively, you can set the width and the height to the width and heights given by the api through .width and .height. </p>
-        <p>Finally, run your app with "npm run dev" and you should see a cat image on the webpage! If you re-start the server, another one will appear. </p>
-        <h3>Deployment: Vercel</h3>
-        <p class="important">Question: is it necessary to set up live reload for the API in Vercel, or is a one-time fetch at build okay? </p>
-        <p>When you're ready to share your website with the world, you can set it up to deploy on Vercel! </p>
-        <p>First, head to <a href="https://vercel.com/" target="_blank" rel="noopener noreferrer" class="external">vercel.com</a>. </p>
-        <p>Then, create a new project. </p>
-        <img width="500" src="images/vercel_add_new_project_better.png">
-        <p>Select your GitHub repository (make sure all of your changes are committed!)</p>
-        <img width="500" src="images/selecting_github_project_in_vercel.png">
-        <p>Astro should be auto-detected (see first screenshot below)</p>
-        <img width="500" src="images/astro_preset_displaying_correctly.png">
-        <p>However, if your Vercel screen looks like the below: </p>
-        <img width="500" src="images/astro_not_auto-detecting.png">
-        <p>You may have to change the root directory following the image below. Select a subfolder if it auto-detects as Astro! </p>
-        <img width="500" src="images/change_to_auto-detect_astro_subfolder.png">
-        <p>Now, your project should display as Astro on Vercel! </p>
-        <p>After that, set the API key using your .env if you can find it in file explorer (illustrated below), or if you can't just copy it again from your email and manually enter it. </p>
-        <img width="500" src="images/adding_a_.env_to_vercel.png">
-        <p>Finally, you're ready to deploy! Just click deploy and your website should go up on a stable URL. You did it! This process can be followed for any other API and should be used whenever an API requires an API key. </p>
+        <p>Finally, run your app locally with "npm run dev" and you should see a cat image on the webpage! If you re-start the server, another one will appear. </p>
         <div style="display: flex; flex-direction: row; align-items: center; gap: 10px; justify-content: center; font-size: 18px;">
-          <a style="padding:10px;" class="button" href="./">go home</a>
-          <p>or</p>
-          <a style="padding:10px;" class="button" href="other-apis.html">check out some other cool APIs!</a>
+          <a style="padding:10px;" class="button" href="deployment.html">Next: learn how to deploy your website when you have an API key</a>
         </div>
     </div>
     </div>

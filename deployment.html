@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>APIs Guide</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="flexbox">
+    <!--rly want to use svelte for templating bc if not this will be a mess-->
+    <div id="sidebar">
+        <a href="https://athena.hackclub.com" id="athena-link" target="_blank" rel="noopener noreferrer">Athena</a>
+        <ul id="nav">
+            <li class="main-level"><a href="./">Home</a></li>
+            <li><a href="./">What is an API?</a></li>
+            <li><a href="info.html">More about APIs</a></li>
+            
+            <li class="main-level"><a href="getting-started.html">Tutorial: CatAPI</a></li>
+            <li><a href="getting-started.html">Getting Started</a></li>
+            <li><a href="using-an-api.html">Using the API</a></li>
+
+            <li class="main-level current"><a href="api-key.html">API Keys</a></li>
+            <li><a href="api-key.html">Getting an API Key</a></li>
+            <li><a href="using-an-api-key.html">Using an API Key</a></li>
+            <li class="current"><a href="deployment.html">Deployment</a></li>
+
+            <li class="main-level"><a href="other-apis.html">Other APIs</a></li>
+        </ul>
+    </div>
+    <div id="main-content">
+        <h1>Deploying Your Program Using Vercel</h1>
+        <p class="important">Question: is it necessary to set up live reload for the API in Vercel, or is a one-time fetch at build okay? </p>
+        <p>When you're ready to share your website with the world, you can set it up to deploy on Vercel! </p>
+        <p>First, head to <a href="https://vercel.com/" target="_blank" rel="noopener noreferrer" class="external">vercel.com</a>. </p>
+        <p>Then, create a new project. </p>
+        <img width="500" src="images/vercel_add_new_project_better.png">
+        <p>Select your GitHub repository (make sure all of your changes are committed!)</p>
+        <img width="500" src="images/selecting_github_project_in_vercel.png">
+        <p>Astro should be auto-detected (see first screenshot below)</p>
+        <img width="500" src="images/astro_preset_displaying_correctly.png">
+        <p>However, if your Vercel screen looks like the below: </p>
+        <img width="500" src="images/astro_not_auto-detecting.png">
+        <p>You may have to change the root directory following the image below. Select a subfolder if it auto-detects as Astro! </p>
+        <img width="500" src="images/change_to_auto-detect_astro_subfolder.png">
+        <p>Now, your project should display as Astro on Vercel! </p>
+        <p>After that, set the API key using your .env if you can find it in file explorer (illustrated below), or if you can't just copy it again from your email and manually enter it. </p>
+        <img width="500" src="images/adding_a_.env_to_vercel.png">
+        <p>Finally, you're ready to deploy! Just click deploy and your website should go up on a stable URL. You did it! This process can be followed for any other API and should be used whenever an API requires an API key. </p>
+        <div style="display: flex; flex-direction: row; align-items: center; gap: 10px; justify-content: center; font-size: 18px;">
+          <a style="padding:10px;" class="button" href="./">go home</a>
+          <p>or</p>
+          <a style="padding:10px;" class="button" href="other-apis.html">check out some other cool APIs!</a>
+        </div>
+    </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
