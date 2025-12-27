@@ -86,6 +86,7 @@ h1 {
 }
 
 #main-content {
+    width: 100%;
     padding: 40px;
     margin-left: 240px;
     background: #ffebf5;
@@ -148,6 +149,37 @@ h1 {
     box-shadow: rgb(121, 121, 121);
 }
 
+.next-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.next-text {
+    color: black;
+    font-size: 18px;
+    margin-bottom: 4px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-button {
+    padding: 12px;
+    border: solid 1px rgb(255, 213, 235);
+    border-radius: 10px;
+    background: rgb(255, 238, 247, 1);
+    text-decoration: none;
+    transition: all;
+    transition-duration: 100ms;
+}
+
+.nav-button:hover {
+    border: solid 1px rgb(255, 197, 227);
+    background: rgb(255, 231, 244);
+}
+
 #sidebar .main-level a {
     margin-left: -5px;
     padding: 5px;
@@ -174,11 +206,12 @@ h1 {
     color: #8e2d2f !important;
 }
 
-a.external {
+.external {
     color: rgb(210, 101, 101) !important;
+    text-decoration: underline;
 }
 
-a.external:hover {
+.external:hover {
     color: #8e2d2f !important;
 }
 
